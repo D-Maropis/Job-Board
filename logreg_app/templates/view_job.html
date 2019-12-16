@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Job</title>
+</head>
+<body>
+    <h1>Hello {{ request.session.first_name }} here are the Job Details!</h1>
+
+    <h2>Job</h2>
+    <p>{{job.job}}</p>
+
+    <h3>Description</h3>
+    <p>{{job.description}}</p>
+
+    <h3>Location</h3>
+    <p>{{job.location}}</p>
+
+    <h3>Job Created By:</h3>
+    <p>{{job.created_job.first_name}}</p>
+
+    <h3>Job Posted</h3>
+    <p>{{job.created_at}}</p>
+
+
+</body>
+</html>
